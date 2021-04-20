@@ -1,0 +1,132 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title> Automation Technologies</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="icon" href="img/logo3.png">
+            <link rel="stylesheet" type="text/css" href="css/at.css">
+        </head>
+        <body>
+            <!-- header elements-->
+            <header>
+                <div class="header">
+                    <div class='row'>
+                        <div class="column1">
+                        <img src="Img/logo2.png" alt="AJD" align="left">
+                        </div>
+                        <div class="column2">
+                            
+                            <img src="img/text1637.png" alt="Snow" >
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <a href="#home">Home</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Services
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                       <div class="dropdown-content">
+                         <a href="#">Automation</a>
+                         <a href="#">Audio</a>
+                         <a href="#">Cameras</a>
+                         <a href="#">Networking | WIFI</a>
+                         <a href="#">Security</a>
+                      </div>
+                    </div>
+                    <a href="#work">Our Work</a>
+                    <a href="#consultation">Consultation</a>
+                    <a href="#news">News Blog</a>
+                    <a href="#contact">About</a>
+                    <a href="#brands">Brands</a>
+                </div>
+            </header>
+            <!-- main elements -->
+            <main>
+                
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/img1.jpg" style="width:100%">
+                    <div class="text">Behind TV Cabinet</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/img2.jpg" style="width:100%">
+                    <div class="text">Custom Theatre</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/img3.jpg" style="width:100%">
+                    <div class="text">Door Camera Anywhere</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/img4.jpg" style="width:100%">
+                    <div class="text">Best in Class Remote</div>
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    }
+                </script>    
+
+    <footer>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add font awesome icons -->
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+        
+    <a href=https://aboutus.html Home></a>
+                <p> This Site is &copy; 2021 by Andrew Dunne</p>
+            </footer>
+        
+        </body>
+    </html>
+
+</DOCTYPE>
